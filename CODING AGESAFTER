@@ -1,0 +1,67 @@
+package selfProgramming;
+
+public class AgesAfter {
+
+	public static void main(String[] args) {
+		int age [] = {12, 17, 20, 49, 45};
+		familyName("Hakimi");
+		System.out.println("Current age: " + age[0]);
+		System.out.println();
+		familyName("Adilla");
+		System.out.println("Current age: " + age[1]);
+		System.out.println();
+		familyName("Wahida");
+		System.out.println("Current age: " + age[2]);
+		System.out.println();
+		familyName("Zulkfle");
+		System.out.println("Current age: " + age[3]);
+		System.out.println();
+		familyName("ZUraini");
+		System.out.println("Current age: " + age[4]);
+	
+		System.out.println();
+		
+		familyName("Hakimi");
+		System.out.println("Ages after 5 years: " );
+		change(age);
+		System.out.println();
+		familyName("Adilla");
+		System.out.println("Ages after 5 years: " );
+		change(age);
+		System.out.println();
+		familyName("Wahida");
+		System.out.println("Ages after 5 years: " );
+		change(age);
+		System.out.println();
+		familyName("Zulkfle");
+		System.out.println("Ages after 5 years: " );
+		change(age);
+		System.out.println();
+		familyName("ZUraini");
+		System.out.println("Ages after 5 years: " );
+		change(age);
+		
+		
+
+		
+
+	}
+	
+	public static void familyName(String n) {
+		System.out.println("Family name: " + n);
+	}
+	
+	public static void change (int a[]) {
+		int i;
+		
+		for(i=0;i<a.length;i++)
+			a[i] += 5;
+		
+		System.out.print(a);
+
+
+		
+
+	}
+	
+}
